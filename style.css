@@ -22,12 +22,12 @@ body, html {
 
 .bgpic2 {
     background-image: url('images/trail.jpg');
-    min-height: 500px;
+    min-height: 100%;
   }
 
 .bgpic3 {
     background-image: url('images/clayhit.jpg');
-    min-height: 500px;
+    min-height: 100%;
   }
 
 
@@ -40,6 +40,8 @@ body, html {
     text-align: justify;
 }
 
+
+
 .title {
   position: absolute;
   left: 0;
@@ -47,8 +49,8 @@ body, html {
   width: 100%;
   text-align: center;
   color: #111;
-
 }
+
 
 .title span.border {
     /* This is box color (faded) */
@@ -68,27 +70,29 @@ h3 {
   color: #111;
 }
 
-.horizontal-scroll-bar {
-  display: flex;
-  overflow-x: auto;
-  background-color: #fff;
-  min-height: 200px;
-  min-width: 100%;
-  justify-content: center;
-  align-items: center;
+
+.slidebox {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  vertical-align: center;
 }
 
-.horizontal-scroll-bar::-webkit-scrollbar {
-  display: none;  
+.card {
+  background-color: transparent;
+  margin: 20px;
 }
 
-.scroll-card {
-  background-color: #e74c3c;
-  margin: 15px;
+.contactimg {
+  width: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
+
 
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgpic1, .bgpic2, .bgpic3 {
     background-attachment: scroll;
   }
 }
